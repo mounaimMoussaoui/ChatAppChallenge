@@ -1,0 +1,189 @@
+@use "variables/colors" as *;
+
+.chat-landing {
+    position: relative;
+    background-color: $Light-Grayish-Violet;
+    overflow: hidden;
+    &::before {
+        content: "";
+        position: absolute;
+        width: 30vw;
+        height: 95vh;
+        top: 0px;
+        left: -6vw;
+        background: linear-gradient(40deg, $Light-Violet, $Moderate-Violet, $Light-Magenta);
+        border-radius: 0px 0px 50% 50%/0px 0px 40% 40%;
+        z-index:0;
+    }
+    &::after {
+        content: "";
+        position: absolute;
+        width: 30vw;
+        height: 95vh;
+        bottom: 0px;
+        right: -10vw;
+        background: $Pale-Violet;
+        border-radius:50% 50% 0px 0px / 40% 40% 0px 0px;
+        z-index:0;
+        opacity: 0.2;
+    }
+    .app-chat {
+        margin: 0px 100px;
+        margin-right: auto;
+        display: flex;
+        flex-direction: column;
+        position: relative;
+        z-index: 1;
+        border: 10px solid $White;
+        background-color: $White;
+        border-radius: 20px;
+        .head-app {
+            display: flex;
+            background: linear-gradient(to right, $Light-Violet, $Moderate-Violet, $Light-Magenta);
+            color: $White;
+            padding: 25px;
+            border-radius: 15px 15px 0px 0px;
+            position: relative;
+            img {
+                width: 40px;
+                height: 40px;
+                border-radius: 50%;
+                border: 2px solid $White;
+            }
+            .user-info {
+                margin-left: 10px ;
+                h4 {
+                    margin-bottom: 2px;
+                }
+                span.status {
+                    font-size: 13px;
+                }
+            }
+            &::before {
+                content: "<";
+                position: absolute;
+                left: 2%;
+                top: 50%;
+                transform: translateY(-50%);
+
+            }
+            &::after {
+                content: "...";
+                position: absolute;
+                right: 2%;
+                top: 50%;
+                transform: translateY(-50%) rotate(90deg);
+            }
+        }
+        .app-messages {
+            display: flex;
+            flex-direction: column;
+            background-color: $Light-Grayish-Violet;
+            border-radius: 0px 0px 20px 20px ;
+            p {
+                color: $Moderate-Violet;
+                background-color: $Grayish-Blue;
+                padding: 8px 15px;
+                margin: 5px 10px;
+                max-width: 65%;
+                border-radius: 15px 15px 15px 5px;
+                &.owner-mess {
+                    margin: 5px 10px;
+                    background-color: $White;
+                    color: $Desaturated-Dark-Violet;
+                    align-self: flex-end;
+                    border-radius: 15px 15px 5px 15px;
+                }
+            }
+            .img-message {
+                display: flex;
+                justify-content: flex-end;
+                img {
+                    margin: 0px 10px;
+                    width: 50px;
+                    height: 50px;
+                    border-radius: 10px;
+                }
+            }
+            .audio {
+                display: flex;
+                justify-content: space-around;
+                color: $White;
+                background: linear-gradient(to left, $Light-Violet, $Light-Magenta);
+                margin: 8px;
+                width: 70%;
+                padding: 15px;
+                padding-right: 0px;
+                border-radius: 15px 15px 15px 5px;
+                position: relative;
+                .time {
+                    font-size: 16px;
+                }   
+                .prix {
+                    font: {
+                        size: 20px;
+                        weight: 700;
+                    };
+                }
+                &::before {
+                    content: "";
+                    position: absolute;
+                    top: 50%;
+                    left: 12px;
+                    transform: translateY(-50%);
+                    border: 1px solid $Light-Grayish-Violet;
+                    width: 15px;
+                    height: 15px;
+                    border-radius: 50%;
+                }
+            }
+            form {
+                width: 100%;
+                display: flex;
+                justify-content: center;
+                margin: 8px auto;
+                position: relative;
+                input {
+                    width: 90%;
+                    border: none;
+                    outline: none;
+                    padding: 15px;
+                    border-radius: 20px;
+                    &::placeholder {
+                        color: $Grayish-Blue;
+                    }
+                }
+                &::after {
+                    content: ">";
+                    position: absolute;
+                    width: 35px;
+                    height: 35px;
+                    border-radius: 50%;
+                    background-color: $Very-Dark-Desaturated-Violet;
+                    top: 50%;
+                    right: 7%;
+                    transform: translateY(-50%);
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    color: $White;
+                    font-weight: bolder;
+                }
+            }
+        }
+        }
+    }
+    .text-contnet {
+        h1 {
+            margin-bottom: 20px;
+            font: {
+                size: 35px;
+                weight: bolder;
+            };
+        }
+        p {
+            max-width: 90%;
+            line-height: 1.7;
+            color: $Dark-Grayish-Violet;
+        }
+    }
