@@ -7,8 +7,8 @@
     &::before {
         content: "";
         position: absolute;
-        width: 30vw;
-        height: 95vh;
+        width: 35vw;
+        height: 85vh;
         top: 0px;
         left: -6vw;
         background: linear-gradient(40deg, $Light-Violet, $Moderate-Violet, $Light-Magenta);
@@ -19,17 +19,17 @@
         content: "";
         position: absolute;
         width: 30vw;
-        height: 95vh;
+        height: 80vh;
         bottom: 0px;
-        right: -10vw;
+        right: -5vw;
         background: $Pale-Violet;
         border-radius:50% 50% 0px 0px / 40% 40% 0px 0px;
         z-index:0;
         opacity: 0.2;
     }
     .app-chat {
-        margin: 0px 100px;
-        margin-right: auto;
+        width: 65%;
+        margin-left: auto;
         display: flex;
         flex-direction: column;
         position: relative;
@@ -37,11 +37,12 @@
         border: 10px solid $White;
         background-color: $White;
         border-radius: 20px;
+        place-self: flex-end;
         .head-app {
             display: flex;
             background: linear-gradient(to right, $Light-Violet, $Moderate-Violet, $Light-Magenta);
             color: $White;
-            padding: 25px;
+            padding: 10px 25px;
             border-radius: 15px 15px 0px 0px;
             position: relative;
             img {
@@ -81,6 +82,7 @@
             background-color: $Light-Grayish-Violet;
             border-radius: 0px 0px 20px 20px ;
             p {
+                font-size: 12px;
                 color: $Moderate-Violet;
                 background-color: $Grayish-Blue;
                 padding: 8px 15px;
@@ -100,8 +102,8 @@
                 justify-content: flex-end;
                 img {
                     margin: 0px 10px;
-                    width: 50px;
-                    height: 50px;
+                    width: 40px;
+                    height: 40px;
                     border-radius: 10px;
                 }
             }
@@ -112,16 +114,16 @@
                 background: linear-gradient(to left, $Light-Violet, $Light-Magenta);
                 margin: 8px;
                 width: 70%;
-                padding: 15px;
+                padding: 5px 10px;
                 padding-right: 0px;
                 border-radius: 15px 15px 15px 5px;
                 position: relative;
                 .time {
-                    font-size: 16px;
+                    font-size: 14px;
                 }   
                 .prix {
                     font: {
-                        size: 20px;
+                        size: 18px;
                         weight: 700;
                     };
                 }
@@ -132,8 +134,8 @@
                     left: 12px;
                     transform: translateY(-50%);
                     border: 1px solid $Light-Grayish-Violet;
-                    width: 15px;
-                    height: 15px;
+                    width: 10px;
+                    height: 10px;
                     border-radius: 50%;
                 }
             }
@@ -147,7 +149,7 @@
                     width: 90%;
                     border: none;
                     outline: none;
-                    padding: 15px;
+                    padding: 8px 15px;
                     border-radius: 20px;
                     &::placeholder {
                         color: $Grayish-Blue;
@@ -156,8 +158,8 @@
                 &::after {
                     content: ">";
                     position: absolute;
-                    width: 35px;
-                    height: 35px;
+                    width: 30px;
+                    height: 30px;
                     border-radius: 50%;
                     background-color: $Very-Dark-Desaturated-Violet;
                     top: 50%;
@@ -175,10 +177,10 @@
     }
     .text-contnet {
         h1 {
-            margin-bottom: 20px;
+            margin-bottom: 25px;
             font: {
                 size: 35px;
-                weight: bolder;
+                weight: 700;
             };
         }
         p {
