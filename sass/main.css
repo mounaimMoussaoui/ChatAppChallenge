@@ -22,9 +22,9 @@ a {
   place-content: center;
   place-items: center;
   grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
-  -webkit-column-gap: 10%;
-     -moz-column-gap: 10%;
-          column-gap: 10%;
+  -webkit-column-gap: 8%;
+     -moz-column-gap: 8%;
+          column-gap: 8%;
   height: 100vh;
   font-family: "Rubik";
 }
@@ -53,7 +53,7 @@ a {
   content: "";
   position: absolute;
   width: 35vw;
-  height: 90vh;
+  height: 85vh;
   top: 0px;
   left: -6vw;
   background: linear-gradient(40deg, hsl(264deg, 100%, 61%), hsl(276deg, 55%, 52%), hsl(293deg, 100%, 63%));
@@ -64,17 +64,17 @@ a {
   content: "";
   position: absolute;
   width: 30vw;
-  height: 90vh;
+  height: 80vh;
   bottom: 0px;
-  right: -12vw;
+  right: -10vw;
   background: hsl(276deg, 100%, 81%);
   border-radius: 50% 50% 0px 0px/40% 40% 0px 0px;
   z-index: 0;
   opacity: 0.1;
 }
 .chat-landing .app-chat {
-  width: 55%;
-  margin-left: 120px;
+  width: 50%;
+  margin-left: 105px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -87,8 +87,8 @@ a {
   border: 10px solid hsl(0deg, 0%, 100%);
   background-color: hsl(0deg, 0%, 100%);
   border-radius: 20px;
-  -webkit-box-shadow: 10px 20px 50px #ddd;
-          box-shadow: 10px 20px 50px #ddd;
+  -webkit-box-shadow: 20px 20px 50px #ddd;
+          box-shadow: 20px 20px 50px #ddd;
 }
 .chat-landing .app-chat .head-app {
   display: -webkit-box;
@@ -153,8 +153,8 @@ a {
   color: hsl(276deg, 55%, 52%);
   background-color: hsl(206deg, 6%, 79%);
   padding: 5px 15px;
-  margin: 5px 10px;
-  max-width: 55%;
+  margin: 7px 10px;
+  max-width: 60%;
   border-radius: 15px 15px 15px 5px;
 }
 .chat-landing .app-chat .app-messages p.owner-mess {
@@ -174,7 +174,7 @@ a {
           justify-content: flex-end;
 }
 .chat-landing .app-chat .app-messages .img-message img {
-  margin: 0px 10px;
+  margin: 0px 5px;
   width: 40px;
   height: 40px;
   border-radius: 10px;
@@ -192,7 +192,7 @@ a {
   color: hsl(0deg, 0%, 100%);
   background: -webkit-gradient(linear, right top, left top, from(hsl(264deg, 100%, 61%)), to(hsl(293deg, 100%, 63%)));
   background: linear-gradient(to left, hsl(264deg, 100%, 61%), hsl(293deg, 100%, 63%));
-  margin: 5px 10px;
+  margin: 7px 10px;
   width: 70%;
   padding: 7px 15px;
   padding-right: 0px;
@@ -226,7 +226,7 @@ a {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  margin: 5px auto;
+  margin: 7px auto;
   position: relative;
 }
 .chat-landing .app-chat .app-messages form input {
