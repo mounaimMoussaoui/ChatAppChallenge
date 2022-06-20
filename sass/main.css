@@ -73,7 +73,7 @@ a {
   opacity: 0.1;
 }
 .chat-landing .app-chat {
-  width: 60%;
+  width: 55%;
   margin-left: 120px;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -87,8 +87,8 @@ a {
   border: 10px solid hsl(0deg, 0%, 100%);
   background-color: hsl(0deg, 0%, 100%);
   border-radius: 20px;
-  -webkit-box-shadow: 10px 20px 50px #999;
-          box-shadow: 10px 20px 50px #999;
+  -webkit-box-shadow: 10px 20px 50px #ddd;
+          box-shadow: 10px 20px 50px #ddd;
 }
 .chat-landing .app-chat .head-app {
   display: -webkit-box;
@@ -97,7 +97,7 @@ a {
   background: -webkit-gradient(linear, left top, right top, from(hsl(264deg, 100%, 61%)), color-stop(hsl(276deg, 55%, 52%)), to(hsl(293deg, 100%, 63%)));
   background: linear-gradient(to right, hsl(264deg, 100%, 61%), hsl(276deg, 55%, 52%), hsl(293deg, 100%, 63%));
   color: hsl(0deg, 0%, 100%);
-  padding: 25px 25px 15px;
+  padding: 15px 30px;
   border-radius: 15px 15px 0px 0px;
   position: relative;
   -webkit-box-align: center;
@@ -114,15 +114,17 @@ a {
   margin-left: 10px;
 }
 .chat-landing .app-chat .head-app .user-info h4 {
-  font-size: 14px;
+  margin: 0px;
+  font-size: 12px;
+  font-weight: 500;
 }
 .chat-landing .app-chat .head-app .user-info span.status {
-  font-size: 9px;
+  font-size: 8px;
 }
 .chat-landing .app-chat .head-app::before {
   content: "<";
   position: absolute;
-  left: 2%;
+  left: 5%;
   top: 55%;
   -webkit-transform: translateY(-50%);
           transform: translateY(-50%);
@@ -130,7 +132,7 @@ a {
 .chat-landing .app-chat .head-app::after {
   content: "...";
   position: absolute;
-  right: 2%;
+  right: 5%;
   top: 55%;
   -webkit-transform: translateY(-50%) rotate(90deg);
           transform: translateY(-50%) rotate(90deg);
@@ -147,16 +149,16 @@ a {
   border-radius: 0px 0px 20px 20px;
 }
 .chat-landing .app-chat .app-messages p {
-  font-size: 9px;
+  font-size: 8px;
   color: hsl(276deg, 55%, 52%);
   background-color: hsl(206deg, 6%, 79%);
-  padding: 8px 15px;
+  padding: 5px 15px;
   margin: 5px 10px;
   max-width: 55%;
   border-radius: 15px 15px 15px 5px;
 }
 .chat-landing .app-chat .app-messages p.owner-mess {
-  margin: 5px 10px;
+  margin: 8px 2px;
   background-color: hsl(0deg, 0%, 100%);
   color: hsl(271deg, 15%, 43%);
   -ms-flex-item-align: end;
@@ -178,7 +180,7 @@ a {
   border-radius: 10px;
 }
 .chat-landing .app-chat .app-messages .audio {
-  font-size: 9px;
+  font-size: 8px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -190,9 +192,9 @@ a {
   color: hsl(0deg, 0%, 100%);
   background: -webkit-gradient(linear, right top, left top, from(hsl(264deg, 100%, 61%)), to(hsl(293deg, 100%, 63%)));
   background: linear-gradient(to left, hsl(264deg, 100%, 61%), hsl(293deg, 100%, 63%));
-  margin: 8px;
+  margin: 5px 10px;
   width: 70%;
-  padding: 7px 10px;
+  padding: 7px 15px;
   padding-right: 0px;
   border-radius: 15px 15px 15px 5px;
   position: relative;
@@ -224,14 +226,15 @@ a {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  margin: 8px auto;
+  margin: 5px auto;
   position: relative;
 }
 .chat-landing .app-chat .app-messages form input {
+  font-size: 9px;
   width: 90%;
   border: none;
   outline: none;
-  padding: 8px 15px;
+  padding: 9px 15px;
   border-radius: 20px;
 }
 .chat-landing .app-chat .app-messages form input::-webkit-input-placeholder {
@@ -252,8 +255,8 @@ a {
 .chat-landing .app-chat .app-messages form::after {
   content: ">";
   position: absolute;
-  width: 30px;
-  height: 30px;
+  width: 20px;
+  height: 20px;
   border-radius: 50%;
   background-color: hsl(271deg, 36%, 24%);
   top: 50%;
@@ -274,7 +277,7 @@ a {
 }
 
 .text-contnet h1 {
-  margin-top: 20px;
+  margin-top: 15px;
   margin-bottom: 25px;
   font-size: 40px;
   font-weight: 500;

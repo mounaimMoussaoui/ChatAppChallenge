@@ -28,7 +28,7 @@
         opacity: 0.1;
     }
     .app-chat {
-        width: 60%;
+        width: 55%;
         margin-left: 120px;
         display: flex;
         flex-direction: column;
@@ -37,12 +37,12 @@
         border: 10px solid $White;
         background-color: $White;
         border-radius: 20px;
-        box-shadow: 10px 20px 50px #999;
+        box-shadow: 10px 20px 50px #ddd;
         .head-app {
             display: flex;
             background: linear-gradient(to right, $Light-Violet, $Moderate-Violet, $Light-Magenta);
             color: $White;
-            padding: 25px 25px 15px;
+            padding: 15px 30px;
             border-radius: 15px 15px 0px 0px;
             position: relative;
             align-items: center;
@@ -53,18 +53,22 @@
                 border: 2px solid $White;
             }
             .user-info {
-                margin-left: 10px ;
+                margin-left: 10px;
                 h4 {
-                    font-size: 14px;
+                    margin: 0px;
+                    font: {
+                        size: 12px;
+                        weight: 500; 
+                    };
                 }
                 span.status {
-                    font-size: 9px;
+                    font-size: 8px;
                 }
             }
             &::before {
                 content: "<";
                 position: absolute;
-                left: 2%;
+                left: 5%;
                 top: 55%;
                 transform: translateY(-50%);
 
@@ -72,7 +76,7 @@
             &::after {
                 content: "...";
                 position: absolute;
-                right: 2%;
+                right: 5%;
                 top: 55%;
                 transform: translateY(-50%) rotate(90deg);
             }
@@ -83,15 +87,15 @@
             background-color: $Light-Grayish-Violet;
             border-radius: 0px 0px 20px 20px ;
             p {
-                font-size: 9px;
+                font-size: 8px;
                 color: $Moderate-Violet;
                 background-color: $Grayish-Blue;
-                padding: 8px 15px;
+                padding: 5px 15px;
                 margin: 5px 10px;
                 max-width: 55%;
                 border-radius: 15px 15px 15px 5px;
                 &.owner-mess {
-                    margin: 5px 10px;
+                    margin: 8px 2px;
                     background-color: $White;
                     color: $Desaturated-Dark-Violet;
                     align-self: flex-end;
@@ -109,20 +113,19 @@
                 }
             }
             .audio {
-                font-size: 9px;
+                font-size: 8px;
                 display: flex;
                 justify-content: space-around;
                 align-items: center;
                 color: $White;
                 background: linear-gradient(to left, $Light-Violet, $Light-Magenta);
-                margin: 8px;
+                margin: 5px 10px;
                 width: 70%;
-                padding: 7px 10px;
+                padding: 7px 15px;
                 padding-right: 0px;
                 border-radius: 15px 15px 15px 5px;
                 position: relative;
                 .time {
-                    // font-size: 8px;
                     padding-left: 5px;
                 }   
                 .prix {
@@ -147,13 +150,14 @@
                 width: 100%;
                 display: flex;
                 justify-content: center;
-                margin: 8px auto;
+                margin: 5px auto;
                 position: relative;
                 input {
+                    font-size: 9px;
                     width: 90%;
                     border: none;
                     outline: none;
-                    padding: 8px 15px;
+                    padding: 9px 15px;
                     border-radius: 20px;
                     &::placeholder {
                         color: $Grayish-Blue;
@@ -162,8 +166,8 @@
                 &::after {
                     content: ">";
                     position: absolute;
-                    width: 30px;
-                    height: 30px;
+                    width: 20px;
+                    height: 20px;
                     border-radius: 50%;
                     background-color: $Very-Dark-Desaturated-Violet;
                     top: 50%;
@@ -181,7 +185,7 @@
     }
     .text-contnet {
         h1 {
-            margin-top: 20px;
+            margin-top: 15px;
             margin-bottom: 25px;
             font: {
                 size: 40px;
