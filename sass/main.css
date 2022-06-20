@@ -53,7 +53,7 @@ a {
   content: "";
   position: absolute;
   width: 35vw;
-  height: 85vh;
+  height: 90vh;
   top: 0px;
   left: -6vw;
   background: linear-gradient(40deg, hsl(264deg, 100%, 61%), hsl(276deg, 55%, 52%), hsl(293deg, 100%, 63%));
@@ -64,17 +64,17 @@ a {
   content: "";
   position: absolute;
   width: 30vw;
-  height: 80vh;
+  height: 90vh;
   bottom: 0px;
-  right: -5vw;
+  right: -12vw;
   background: hsl(276deg, 100%, 81%);
   border-radius: 50% 50% 0px 0px/40% 40% 0px 0px;
   z-index: 0;
-  opacity: 0.2;
+  opacity: 0.1;
 }
 .chat-landing .app-chat {
-  width: 65%;
-  margin-left: auto;
+  width: 60%;
+  margin-left: 120px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -87,9 +87,8 @@ a {
   border: 10px solid hsl(0deg, 0%, 100%);
   background-color: hsl(0deg, 0%, 100%);
   border-radius: 20px;
-  -ms-grid-row-align: flex-end;
-  -ms-grid-column-align: flex-end;
-  place-self: flex-end;
+  -webkit-box-shadow: 10px 20px 50px #999;
+          box-shadow: 10px 20px 50px #999;
 }
 .chat-landing .app-chat .head-app {
   display: -webkit-box;
@@ -98,13 +97,16 @@ a {
   background: -webkit-gradient(linear, left top, right top, from(hsl(264deg, 100%, 61%)), color-stop(hsl(276deg, 55%, 52%)), to(hsl(293deg, 100%, 63%)));
   background: linear-gradient(to right, hsl(264deg, 100%, 61%), hsl(276deg, 55%, 52%), hsl(293deg, 100%, 63%));
   color: hsl(0deg, 0%, 100%);
-  padding: 10px 25px;
+  padding: 25px 25px 15px;
   border-radius: 15px 15px 0px 0px;
   position: relative;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 .chat-landing .app-chat .head-app img {
-  width: 40px;
-  height: 40px;
+  width: 25px;
+  height: 25px;
   border-radius: 50%;
   border: 2px solid hsl(0deg, 0%, 100%);
 }
@@ -112,16 +114,16 @@ a {
   margin-left: 10px;
 }
 .chat-landing .app-chat .head-app .user-info h4 {
-  margin-bottom: 2px;
+  font-size: 14px;
 }
 .chat-landing .app-chat .head-app .user-info span.status {
-  font-size: 13px;
+  font-size: 9px;
 }
 .chat-landing .app-chat .head-app::before {
   content: "<";
   position: absolute;
   left: 2%;
-  top: 50%;
+  top: 55%;
   -webkit-transform: translateY(-50%);
           transform: translateY(-50%);
 }
@@ -129,7 +131,7 @@ a {
   content: "...";
   position: absolute;
   right: 2%;
-  top: 50%;
+  top: 55%;
   -webkit-transform: translateY(-50%) rotate(90deg);
           transform: translateY(-50%) rotate(90deg);
 }
@@ -145,12 +147,12 @@ a {
   border-radius: 0px 0px 20px 20px;
 }
 .chat-landing .app-chat .app-messages p {
-  font-size: 12px;
+  font-size: 9px;
   color: hsl(276deg, 55%, 52%);
   background-color: hsl(206deg, 6%, 79%);
   padding: 8px 15px;
   margin: 5px 10px;
-  max-width: 65%;
+  max-width: 55%;
   border-radius: 15px 15px 15px 5px;
 }
 .chat-landing .app-chat .app-messages p.owner-mess {
@@ -176,23 +178,27 @@ a {
   border-radius: 10px;
 }
 .chat-landing .app-chat .app-messages .audio {
+  font-size: 9px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -ms-flex-pack: distribute;
       justify-content: space-around;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   color: hsl(0deg, 0%, 100%);
   background: -webkit-gradient(linear, right top, left top, from(hsl(264deg, 100%, 61%)), to(hsl(293deg, 100%, 63%)));
   background: linear-gradient(to left, hsl(264deg, 100%, 61%), hsl(293deg, 100%, 63%));
   margin: 8px;
   width: 70%;
-  padding: 5px 10px;
+  padding: 7px 10px;
   padding-right: 0px;
   border-radius: 15px 15px 15px 5px;
   position: relative;
 }
 .chat-landing .app-chat .app-messages .audio .time {
-  font-size: 14px;
+  padding-left: 5px;
 }
 .chat-landing .app-chat .app-messages .audio .prix {
   font-size: 18px;
@@ -268,9 +274,10 @@ a {
 }
 
 .text-contnet h1 {
+  margin-top: 20px;
   margin-bottom: 25px;
-  font-size: 35px;
-  font-weight: 700;
+  font-size: 40px;
+  font-weight: 500;
 }
 .text-contnet p {
   max-width: 90%;
