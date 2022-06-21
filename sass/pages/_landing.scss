@@ -8,10 +8,10 @@
         content: "";
         position: absolute;
         width: 35vw;
-        height: 85vh;
+        height: 90vh;
         top: 0px;
         left: -6vw;
-        background: linear-gradient(40deg, $Light-Violet, $Moderate-Violet, $Light-Magenta);
+        background: linear-gradient(40deg, $Light-Violet, $Moderate-Violet);
         border-radius: 0px 0px 50% 50%/0px 0px 40% 40%;
         z-index:0;
     }
@@ -19,7 +19,7 @@
         content: "";
         position: absolute;
         width: 30vw;
-        height: 80vh;
+        height: 85vh;
         bottom: 0px;
         right: -10vw;
         background: $Pale-Violet;
@@ -29,7 +29,7 @@
     }
     .app-chat {
         width: 50%;
-        margin-left: 105px;
+        margin-left: 115px;
         display: flex;
         flex-direction: column;
         position: relative;
@@ -42,7 +42,7 @@
             display: flex;
             background: linear-gradient(to right, $Light-Violet, $Moderate-Violet, $Light-Magenta);
             color: $White;
-            padding: 15px 30px;
+            padding: 16px 30px;
             border-radius: 15px 15px 0px 0px;
             position: relative;
             align-items: center;
@@ -71,7 +71,6 @@
                 left: 5%;
                 top: 55%;
                 transform: translateY(-50%);
-
             }
             &::after {
                 content: "...";
@@ -87,15 +86,18 @@
             background-color: $Light-Grayish-Violet;
             border-radius: 0px 0px 20px 20px;
             p {
-                font-size: 8px;
+                &:first-of-type {
+                    margin-top: 8px;
+                }
+                font-size: 9px;
                 color: $Moderate-Violet;
                 background-color: $Grayish-Blue;
-                padding: 5px 15px;
-                margin: 7px 10px;
-                max-width: 60%;
+                padding: 8px 15px;
+                margin: 5px 10px;
+                max-width: 65%;
                 border-radius: 15px 15px 15px 5px;
                 &.owner-mess {
-                    margin: 8px 2px;
+                    margin: 5px 2px;
                     background-color: $White;
                     color: $Desaturated-Dark-Violet;
                     align-self: flex-end;
@@ -113,13 +115,13 @@
                 }
             }
             .audio {
-                font-size: 8px;
+                font-size: 9px;
                 display: flex;
                 justify-content: space-around;
                 align-items: center;
                 color: $White;
                 background: linear-gradient(to left, $Light-Violet, $Light-Magenta);
-                margin: 7px 10px;
+                margin: 5px 10px;
                 width: 70%;
                 padding: 7px 15px;
                 padding-right: 0px;

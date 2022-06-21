@@ -53,10 +53,10 @@ a {
   content: "";
   position: absolute;
   width: 35vw;
-  height: 85vh;
+  height: 90vh;
   top: 0px;
   left: -6vw;
-  background: linear-gradient(40deg, hsl(264deg, 100%, 61%), hsl(276deg, 55%, 52%), hsl(293deg, 100%, 63%));
+  background: linear-gradient(40deg, hsl(264deg, 100%, 61%), hsl(276deg, 55%, 52%));
   border-radius: 0px 0px 50% 50%/0px 0px 40% 40%;
   z-index: 0;
 }
@@ -64,7 +64,7 @@ a {
   content: "";
   position: absolute;
   width: 30vw;
-  height: 80vh;
+  height: 85vh;
   bottom: 0px;
   right: -10vw;
   background: hsl(276deg, 100%, 81%);
@@ -74,7 +74,7 @@ a {
 }
 .chat-landing .app-chat {
   width: 50%;
-  margin-left: 105px;
+  margin-left: 115px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -97,7 +97,7 @@ a {
   background: -webkit-gradient(linear, left top, right top, from(hsl(264deg, 100%, 61%)), color-stop(hsl(276deg, 55%, 52%)), to(hsl(293deg, 100%, 63%)));
   background: linear-gradient(to right, hsl(264deg, 100%, 61%), hsl(276deg, 55%, 52%), hsl(293deg, 100%, 63%));
   color: hsl(0deg, 0%, 100%);
-  padding: 15px 30px;
+  padding: 16px 30px;
   border-radius: 15px 15px 0px 0px;
   position: relative;
   -webkit-box-align: center;
@@ -149,16 +149,19 @@ a {
   border-radius: 0px 0px 20px 20px;
 }
 .chat-landing .app-chat .app-messages p {
-  font-size: 8px;
+  font-size: 9px;
   color: hsl(276deg, 55%, 52%);
   background-color: hsl(206deg, 6%, 79%);
-  padding: 5px 15px;
-  margin: 7px 10px;
-  max-width: 60%;
+  padding: 8px 15px;
+  margin: 5px 10px;
+  max-width: 65%;
   border-radius: 15px 15px 15px 5px;
 }
+.chat-landing .app-chat .app-messages p:first-of-type {
+  margin-top: 8px;
+}
 .chat-landing .app-chat .app-messages p.owner-mess {
-  margin: 8px 2px;
+  margin: 5px 2px;
   background-color: hsl(0deg, 0%, 100%);
   color: hsl(271deg, 15%, 43%);
   -ms-flex-item-align: end;
@@ -180,7 +183,7 @@ a {
   border-radius: 10px;
 }
 .chat-landing .app-chat .app-messages .audio {
-  font-size: 8px;
+  font-size: 9px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -192,7 +195,7 @@ a {
   color: hsl(0deg, 0%, 100%);
   background: -webkit-gradient(linear, right top, left top, from(hsl(264deg, 100%, 61%)), to(hsl(293deg, 100%, 63%)));
   background: linear-gradient(to left, hsl(264deg, 100%, 61%), hsl(293deg, 100%, 63%));
-  margin: 7px 10px;
+  margin: 5px 10px;
   width: 70%;
   padding: 7px 15px;
   padding-right: 0px;
