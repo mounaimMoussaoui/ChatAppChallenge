@@ -53,7 +53,7 @@ a {
   content: "";
   position: absolute;
   width: 35vw;
-  height: 90vh;
+  height: 87vh;
   top: 0px;
   left: -6vw;
   background: linear-gradient(40deg, hsl(264deg, 100%, 61%), hsl(276deg, 55%, 52%));
@@ -74,7 +74,7 @@ a {
 }
 .chat-landing .app-chat {
   width: 50%;
-  margin-left: 115px;
+  margin-left: 120px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -153,7 +153,7 @@ a {
   color: hsl(276deg, 55%, 52%);
   background-color: hsl(206deg, 6%, 79%);
   padding: 8px 15px;
-  margin: 5px 10px;
+  margin: 4px 10px;
   max-width: 65%;
   border-radius: 15px 15px 15px 5px;
 }
@@ -161,7 +161,7 @@ a {
   margin-top: 8px;
 }
 .chat-landing .app-chat .app-messages p.owner-mess {
-  margin: 5px 2px;
+  margin: 4px 2px;
   background-color: hsl(0deg, 0%, 100%);
   color: hsl(271deg, 15%, 43%);
   -ms-flex-item-align: end;
@@ -175,6 +175,7 @@ a {
   -webkit-box-pack: end;
       -ms-flex-pack: end;
           justify-content: flex-end;
+  margin-top: 5px;
 }
 .chat-landing .app-chat .app-messages .img-message img {
   margin: 0px 5px;
@@ -195,9 +196,9 @@ a {
   color: hsl(0deg, 0%, 100%);
   background: -webkit-gradient(linear, right top, left top, from(hsl(264deg, 100%, 61%)), to(hsl(293deg, 100%, 63%)));
   background: linear-gradient(to left, hsl(264deg, 100%, 61%), hsl(293deg, 100%, 63%));
-  margin: 5px 10px;
+  margin: 4px 10px;
   width: 70%;
-  padding: 7px 15px;
+  padding: 6px 15px;
   padding-right: 0px;
   border-radius: 15px 15px 15px 5px;
   position: relative;

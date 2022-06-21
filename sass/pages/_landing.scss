@@ -8,7 +8,7 @@
         content: "";
         position: absolute;
         width: 35vw;
-        height: 90vh;
+        height: 87vh;
         top: 0px;
         left: -6vw;
         background: linear-gradient(40deg, $Light-Violet, $Moderate-Violet);
@@ -29,7 +29,7 @@
     }
     .app-chat {
         width: 50%;
-        margin-left: 115px;
+        margin-left: 120px;
         display: flex;
         flex-direction: column;
         position: relative;
@@ -93,11 +93,11 @@
                 color: $Moderate-Violet;
                 background-color: $Grayish-Blue;
                 padding: 8px 15px;
-                margin: 5px 10px;
+                margin: 4px 10px;
                 max-width: 65%;
                 border-radius: 15px 15px 15px 5px;
                 &.owner-mess {
-                    margin: 5px 2px;
+                    margin: 4px 2px;
                     background-color: $White;
                     color: $Desaturated-Dark-Violet;
                     align-self: flex-end;
@@ -107,6 +107,7 @@
             .img-message {
                 display: flex;
                 justify-content: flex-end;
+                margin-top: 5px;
                 img {
                     margin: 0px 5px;
                     width: 40px;
@@ -121,9 +122,9 @@
                 align-items: center;
                 color: $White;
                 background: linear-gradient(to left, $Light-Violet, $Light-Magenta);
-                margin: 5px 10px;
+                margin: 4px 10px;
                 width: 70%;
-                padding: 7px 15px;
+                padding: 6px 15px;
                 padding-right: 0px;
                 border-radius: 15px 15px 15px 5px;
                 position: relative;
